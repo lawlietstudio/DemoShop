@@ -40,9 +40,11 @@
 		21E6635D28C446C200B72ADB /* CartItemToAddDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E6635C28C446C200B72ADB /* CartItemToAddDto.swift */; };
 		21E6635F28C47D4F00B72ADB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E6635E28C47D4F00B72ADB /* LoadingView.swift */; };
 		21E6636328C4F0B900B72ADB /* CartItemQtyUpdateDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E6636228C4F0B900B72ADB /* CartItemQtyUpdateDto.swift */; };
+		6159D249DF5278D6A07EAEA3 /* Pods_DemoShopIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC9F6021D33B1473F982E18 /* Pods_DemoShopIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CC9F6021D33B1473F982E18 /* Pods_DemoShopIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoShopIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C344228B281200095E336 /* DemoShopIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoShopIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C344528B281200095E336 /* DemoShopIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoShopIOSApp.swift; sourceTree = "<group>"; };
 		211C344928B281230095E336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		21E6635C28C446C200B72ADB /* CartItemToAddDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemToAddDto.swift; sourceTree = "<group>"; };
 		21E6635E28C47D4F00B72ADB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		21E6636228C4F0B900B72ADB /* CartItemQtyUpdateDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemQtyUpdateDto.swift; sourceTree = "<group>"; };
+		616475223AC4A9AF5A912374 /* Pods-DemoShopIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoShopIOS.release.xcconfig"; path = "Target Support Files/Pods-DemoShopIOS/Pods-DemoShopIOS.release.xcconfig"; sourceTree = "<group>"; };
+		BD75327531DB0436E7421B14 /* Pods-DemoShopIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoShopIOS.debug.xcconfig"; path = "Target Support Files/Pods-DemoShopIOS/Pods-DemoShopIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2183070E28B4F72600FB7CE8 /* CachedAsyncImage in Frameworks */,
+				6159D249DF5278D6A07EAEA3 /* Pods_DemoShopIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,8 @@
 			children = (
 				211C344428B281200095E336 /* DemoShopIOS */,
 				211C344328B281200095E336 /* Products */,
+				C50A2ADD2C1ED54B1329B369 /* Pods */,
+				CCEC8D38CE48DD658F0BE312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +216,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		C50A2ADD2C1ED54B1329B369 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD75327531DB0436E7421B14 /* Pods-DemoShopIOS.debug.xcconfig */,
+				616475223AC4A9AF5A912374 /* Pods-DemoShopIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCEC8D38CE48DD658F0BE312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9F6021D33B1473F982E18 /* Pods_DemoShopIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 211C345028B281230095E336 /* Build configuration list for PBXNativeTarget "DemoShopIOS" */;
 			buildPhases = (
+				F06526798E733681D4804777 /* [CP] Check Pods Manifest.lock */,
 				211C343E28B281200095E336 /* Sources */,
 				211C343F28B281200095E336 /* Frameworks */,
 				211C344028B281200095E336 /* Resources */,
@@ -279,6 +304,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F06526798E733681D4804777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoShopIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		211C343E28B281200095E336 /* Sources */ = {
@@ -437,6 +487,7 @@
 		};
 		211C345128B281230095E336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD75327531DB0436E7421B14 /* Pods-DemoShopIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +502,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +519,7 @@
 		};
 		211C345228B281230095E336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616475223AC4A9AF5A912374 /* Pods-DemoShopIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +534,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

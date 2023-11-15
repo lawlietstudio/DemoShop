@@ -30,7 +30,10 @@ struct ProductListView: View {
                             
                             NavigationLink(destination: ProductDetailView(productDto: productDto)) {
                                 
-                            }.frame(width: 0, height: 0)
+                            }
+                            .frame(width: 0, height: 0)
+                            .opacity(0)
+                            
                             HStack {
                                 CachedAsyncImage(
                                     url: URL(string: productDto.imageURL),
@@ -66,9 +69,6 @@ struct ProductListView: View {
                     .padding(.vertical, -24)
                     .padding(.horizontal, -16)
                     .listStyle(SidebarListStyle())
-                    //                    .cornerRadius(isShowing ? 20 : 0)
-                    //                    .offset(x: isShowing ? 200: 0, y: isShowing ? 24 : 0)
-                    //                    .scaleEffect(isShowing ? 0.8 : 1)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading)
                         {
